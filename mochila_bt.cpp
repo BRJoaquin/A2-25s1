@@ -71,7 +71,7 @@ void mochila_bt(int capacidad, int objIndex, bool *objetosUsados,
 void mochila_01(int capacidad) {
   bool *usados = new bool[cantObjetos]();
   bool *mejorUsados = new bool[cantObjetos]();
-  int mejorValorMochila = INT_MAX;
+  int mejorValorMochila = -1;
   mochila_bt(capacidad, 0, usados, 0, mejorUsados, mejorValorMochila);
   cout << mejorValorMochila << endl;
 }
